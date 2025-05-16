@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Gabriel Hanny">
+  <meta name="google" content="notranslate" />
+  <meta name="author" content="Mashup templates by Orson.io team">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}">
+  <link rel="icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+
+  <title>Gabriel Hanny - About Me</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.3f6952e4.css') }}">
+</head>
+
+<body>
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('home') }}">01 : Home</a></li>
+            <li><a href="{{ url_for('works') }}">02 : Works</a></li>
+            <li><a href="{{ url_for('about') }}">03 : About me</a></li>
+            <li><a href="{{ url_for('contact') }}">04 : Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">03 : About me</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <h3>Consectetur adipiscing elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus at sem quis varius. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultrices hendrerit nisl.</p>
+
+                  <h3>Ut enim ad minim</h3>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                  <h3>Maecenas luctus at sem quis varius</h3>
+                  <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                    Phasellus iaculis magna sagittis elit sagittis, at hendrerit lorem venenatis. Morbi accumsan iaculis blandit.</p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <img src="{{ url_for('static', filename='assets/images/profil.jpg') }}" class="img-responsive" alt="Profile Picture">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© Gabriel Hanny | Created with <a href="http://www.mashup-template.com/">Mashup Template</a> / <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      navActivePage && navActivePage();
+    });
+  </script>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
